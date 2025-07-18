@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+
+  /* Game Colors */
+  --coral: hsl(0, 71%, 69%);
+  --teal: hsl(176, 57%, 59%);
+  --sky: hsl(199, 69%, 55%);
+  --mint: hsl(145, 44%, 71%);
+  --yellow: hsl(43, 96%, 79%);
+  --plum: hsl(300, 47%, 75%);
+  --dark: hsl(210, 11%, 21%);
+  --success: hsl(158, 100%, 36%);
+  --warning: hsl(16, 70%, 60%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@layer components {
+  .font-fredoka {
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .font-nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .bg-coral {
+    background-color: var(--coral);
+  }
+
+  .bg-teal {
+    background-color: var(--teal);
+  }
+
+  .bg-sky {
+    background-color: var(--sky);
+  }
+
+  .bg-mint {
+    background-color: var(--mint);
+  }
+
+  .bg-yellow {
+    background-color: var(--yellow);
+  }
+
+  .bg-plum {
+    background-color: var(--plum);
+  }
+
+  .bg-dark {
+    background-color: var(--dark);
+  }
+
+  .bg-success {
+    background-color: var(--success);
+  }
+
+  .bg-warning {
+    background-color: var(--warning);
+  }
+
+  .text-coral {
+    color: var(--coral);
+  }
+
+  .text-teal {
+    color: var(--teal);
+  }
+
+  .text-sky {
+    color: var(--sky);
+  }
+
+  .text-mint {
+    color: var(--mint);
+  }
+
+  .text-yellow {
+    color: var(--yellow);
+  }
+
+  .text-plum {
+    color: var(--plum);
+  }
+
+  .text-dark {
+    color: var(--dark);
+  }
+
+  .text-success {
+    color: var(--success);
+  }
+
+  .text-warning {
+    color: var(--warning);
+  }
+
+  .border-coral {
+    border-color: var(--coral);
+  }
+
+  .border-teal {
+    border-color: var(--teal);
+  }
+
+  .border-sky {
+    border-color: var(--sky);
+  }
+
+  .border-mint {
+    border-color: var(--mint);
+  }
+
+  .border-yellow {
+    border-color: var(--yellow);
+  }
+
+  .border-plum {
+    border-color: var(--plum);
+  }
+
+  .hover\:bg-coral:hover {
+    background-color: var(--coral);
+  }
+
+  .hover\:bg-teal:hover {
+    background-color: var(--teal);
+  }
+
+  .hover\:bg-sky:hover {
+    background-color: var(--sky);
+  }
+
+  .hover\:bg-mint:hover {
+    background-color: var(--mint);
+  }
+
+  .hover\:bg-yellow:hover {
+    background-color: var(--yellow);
+  }
+
+  .hover\:bg-plum:hover {
+    background-color: var(--plum);
+  }
+
+  .hover\:bg-success:hover {
+    background-color: var(--success);
+  }
+
+  .hover\:bg-warning:hover {
+    background-color: var(--warning);
+  }
+}
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-pulse-fast {
+    animation: pulse 1s infinite;
+  }
+
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .animate-fall {
+    animation: fall 3s linear infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 0.5s ease-in-out;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+  }
+
+  @keyframes sparkle {
+    0% { transform: scale(0) rotate(0deg); opacity: 0; }
+    50% { transform: scale(1) rotate(180deg); opacity: 1; }
+    100% { transform: scale(0) rotate(360deg); opacity: 0; }
+  }
+}
